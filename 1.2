@@ -1,0 +1,12 @@
+import random
+
+def generate_random_numbers(n, min_val, max_val):
+    """
+    Функция для генерации списка из n случайных чисел в диапазоне от min_val до max_val.
+    """
+    random_numbers = [random.randint(min_val, max_val) for _ in range(n)]
+    return random_numbers
+
+# Генерируем 10 случайных чисел от 1 до 100
+random_numbers = generate_random_numbers(10, 1, 100)
+print("Случайные числа:", random_numbers)
